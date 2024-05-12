@@ -1,9 +1,35 @@
-body {
-  background-image: url("./assets/bg-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+* {
+  margin: 0;
+  padding 0;
+  font-family: "Inter", sans-serif;
 }
 
-#container {
+body {
+  background: url("./assets/bg-mobile.jpg") no-repeat top center/cover;
+}
+
+#profile {
+  text-align: center;
   
 }
+
+#profile img {
+  width: 112px;
+  padding-top: 56px;
+}
+
+#links * {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: auto;
+}
+
+#links a {
+  border: 1px solid red;
+  text-decoration: none;
+  font-weight: 400;
+  
+}
+
