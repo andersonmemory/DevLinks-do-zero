@@ -4,84 +4,55 @@
   box-sizing: border-box;
 }
 
-body * {
-  font-family: "Inter", sans-serif;
-  color: white;
-}
-
 body {
   background: url("./assets/bg-mobile.jpg") no-repeat top center/cover;
 }
 
+body * {
+  color: white;
+}
+
 #container {
-  border: 1px solid red;
   width: 588px;
   height: 712px;
-  margin: 56px auto 0px;
+  margin: auto;
+  border: 1px solid red;
 }
 
 #profile {
   text-align: center;
-  padding-top: 24px;
+  padding-top: 52px;
 }
 
 #profile img {
   width: 112px;
-}
-
-#profile p {
-  font-weight: 500;
-  line-height: 24px;
-  margin-top: 8px;
+  margin-top: 24px;
 }
 
 ul {
+  border:1px solid red;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  gap: 8px;
-
   list-style: none;
-
-  border: 1px solid blue;
-  height: 320px;
-  padding: 24px 0px ;
+  gap: 8px;
 }
 
 ul li a {
-  display: flex;
+  border: 1px solid yellow;
   height: 52px;
+  display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-
-  font-weight: 400;
   text-decoration: none;
-
-  transition: background 0.5s;
 }
-
-ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.01);
-}
-
-/* social links */
 
 #social-links {
-  border: 1px solid red;
   display: flex;
-  gap: 16px;
   justify-content: center;
-  padding: 24px 0px;
+  gap: 32px;
+  font-size: 24px;
 }
 
 #social-links a {
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding: 16px;
-  font-size: 24px;
+ padding: 24px; 
 }
