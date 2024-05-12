@@ -46,13 +46,18 @@ body {
   gap: 8px;
 }
 
-#links a {
-  border: 1px solid red;
+#links ul li a {
   text-decoration: none;
   align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 24px;
-
   padding: 15px;
+  
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid white;
+  border-radius: 9999px;
+
 }
 
+/* buttons */
