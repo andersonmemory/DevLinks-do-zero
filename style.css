@@ -1,9 +1,12 @@
 * {
   margin: 0;
-  padding 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body * {
   font-family: "Inter", sans-serif;
   color: white;
-  box-sizing: border-box;
 }
 
 body {
@@ -11,63 +14,74 @@ body {
 }
 
 #container {
+  border: 1px solid red;
   width: 588px;
   height: 712px;
   margin: 56px auto 0px;
 }
 
-/* profile */
-
 #profile {
   text-align: center;
-  padding: 24px;
+  padding-top: 24px;
 }
 
 #profile img {
   width: 112px;
-  padding-top: 56px;
 }
 
 #profile p {
   font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
 }
 
-/* links */
-
-#links {
-  margin-top: 80px;
-  width: 588px;
-  height: 320px;
-}
-
-#links * {  
-  list-style: none;
+ul {
   display: flex;
   flex-direction: column;
-  gap: 8px ;
-  padding: 16px 24px;
+  margin-top: 40px;
+  gap: 8px;
+
+  list-style: none;
+
+  border: 1px solid blue;
+  height: 320px;
+  padding: 24px 0px ;
 }
 
 ul li a {
-  text-decoration: none;
-  align-items: center;
+  display: flex;
+  height: 52px;
   justify-content: center;
-  font-weight: 400;
-  font-size: 24px;
-  
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid white;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 
-  transition: background 0.2s;
+  font-weight: 400;
+  text-decoration: none;
 
+  transition: background 0.5s;
 }
 
 ul li a:hover {
-  background-color: rgba(0, 255, 0, 0.05);
-  border: 1.2px solid rgba(255, 255 ,255, 0.5);
+  background-color: rgba(255, 255, 255, 0.01);
 }
+
+/* social links */
 
 #social-links {
   border: 1px solid red;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 24px 0px;
+}
+
+#social-links a {
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  font-size: 24px;
 }
