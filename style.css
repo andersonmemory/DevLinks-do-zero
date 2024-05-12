@@ -2,15 +2,24 @@
   margin: 0;
   padding 0;
   font-family: "Inter", sans-serif;
+  color: white;
 }
 
 body {
   background: url("./assets/bg-mobile.jpg") no-repeat top center/cover;
 }
 
+#container {
+  width: 588px;
+  height: 712px;
+  margin: auto;
+}
+
+/* profile */
+
 #profile {
   text-align: center;
-  
+  padding: 24px;
 }
 
 #profile img {
@@ -18,18 +27,32 @@ body {
   padding-top: 56px;
 }
 
-#links * {
+#profile p {
+  font-weight: 500;
+}
+
+/* links */
+
+#links {
+  margin-top: 80px;
+  width: 588px;
+  height: 320px;
+}
+
+#links * {  
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin: auto;
 }
 
 #links a {
   border: 1px solid red;
   text-decoration: none;
+  align-items: center;
   font-weight: 400;
-  
+  font-size: 24px;
+
+  padding: 15px;
 }
 
