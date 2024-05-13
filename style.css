@@ -19,7 +19,7 @@
   --surface-hover-color: rgba(0, 0, 0, 0.01);
   --highlight-color: rgba(0, 0, 0, 0.3);
   --social-hover-color: rgba(0, 0, 0, 0.3);
-  --background-bg: url("./assets/bg-desktop-light.jpg");
+  --background-bg: url("./assets/bg-mobile-light.jpg");
   --bg-switch: url("./assets/sun.svg");
   --font-color: black;
 }
@@ -37,8 +37,6 @@ body * {
   position: relative;
   width: 64px;
   margin: 4px auto;
-  padding: 32px 0;
-
 }
 
 #switch button {
@@ -84,6 +82,7 @@ body * {
   padding: 24px;
   margin-top: 40px;
   font-weight: 500;
+
 }
 
 #profile img {
@@ -94,7 +93,10 @@ ul {
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 8px;
+  gap: 16px;
+  padding: 24px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 ul li a {
@@ -119,7 +121,6 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 0;
 }
 
 #social-links a {
@@ -132,8 +133,18 @@ ul li a:hover {
   transition: background 1s;
 }
 
+
 #social-links a:hover {
   background-color: var(--social-hover-color);
+}
+
+@media (min-width: 700px) {
+  :root {
+    --background-bg: url("./assets/bg-desktop.jpg");
+  }
+  .light {
+    --background-bg: url("assets/bg-desktop-light.jpg");
+  }
 }
 
 @keyframes slide-in {
