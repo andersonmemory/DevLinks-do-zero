@@ -133,6 +133,9 @@ ul li a:hover {
   transition: background 1s;
 }
 
+footer {
+  text-align: center;
+}
 
 #social-links a:hover {
   background-color: var(--social-hover-color);
