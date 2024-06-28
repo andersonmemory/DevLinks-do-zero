@@ -16,15 +16,7 @@
 
   // workbench
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Solarized Light",
-
-  // prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.enable": true,
-  "prettier.singleQuote": false,
-  "prettier.tabWidth": 2,
-  "prettier.semi": false,
 
   // terminal
   "terminal.integrated.fontSize": 16,

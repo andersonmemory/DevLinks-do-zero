@@ -3,3 +3,18 @@ body {
  background: url(./assets/bg-mobile.jpg) no-repeat  top center/cover;
 
 }
+
+#container {
+  width: 360px;
+  height: 712px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+#profile {
+  text-allign: center;
+}
+
+#profile img {
+  width: 112px;
+}
