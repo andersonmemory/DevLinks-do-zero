@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --bg-url: url("./assets/bg-mobile.jpg");
+  --stoke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --text-color: rgb(255, 255, 255);
+  --button-url: url("./assets/moon-stars.svg");
+
+}
+
+.light {
+  --bg-url: url("./assets/bg-mobile-light.jpg");
+  --stoke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --text-color: rgb(0, 0, 0);
+  --button-url: url("./assets/sun.svg");
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  transition: background 0.2s;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0;
+  padding: 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  margin-top: 8px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+  height: 24px;
+  margin: auto;
+}
+
+#switch button {
+  background: white var(--button-url) no-repeat center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 0;
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 1;
+
+  animation: slide-back 0.2s;
+
+}
+
+.light #switch button {
+  animation: slide-in 0.2s forwards;
+}
+
+#switch span {
+  position: absolute;
+  display: block;
+  background-color: var(--surface-color);
+  width: 64px;
+  height: 24px;
+  border-radius: 9999px;
+  border: 1px solid var(--stoke-color)
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  border: 1px solid var(--stoke-color);
+  justify-content: center;
+  align-items: center;
+  background: var(--surface-color);
+  border-radius: 11px;
+  height: 56px;
+  padding: 24px 16px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--highlight-color);
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@media (min-width: 700px)
+{
+  :root {
+    --bg-url: url("./assets/bg-desktop.jpg")
+  }
+  .light {
+    --bg-url: url("./assets/bg-desktop-light.jpg")
+  }
+}
